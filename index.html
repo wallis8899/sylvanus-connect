@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sylvanus Connect</title>
+    
+    </head>
+    <body>
+        <style>
+            body{
+                background-image: url("images/5.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+            .box{
+                    font-size: 50px;
+                    padding-top: 15%;
+                    padding-left: 30%;
+                    color: blue;
+            }
+            .under{
+                padding-top: 30%;
+                    padding-left: 30%;
+                    color: red;
+            }
+            .colour{
+                font-size: 20px;
+
+            }
+            
+        </style>
+        <table width="100%" height="700px">
+            <!----Row1---->
+            <div class="colour"> 
+                <h2></h2>
+               <a href="#" onmouseover="changeColor('blue')">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <h2></h2>
+                <a href="pictures.html" onmouseover="changeColor('blue')">Images</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <h2></h2>
+                <a href="videos.html" onmouseover="changeColor('blue')">Videos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <h2></h2>       
+                <a href="#" onmouseover="changeColor('blue')">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <h2></h2>
+                <a href="#" onmouseover="changeColor('blue')">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <h2></h2>
+                <a href="donate.html" onmouseover="changeColor('blue')">Donate</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <h2></h2>
+            </div>
+            <div class="box">
+            Sylvanus Connect
+            </div>
+            <div class="under">
+                Developed by David Mawuko
+
+            </div>
+            <div id="button">
+                <label id="mylabel1">0</label>
+                <button id="like">Like</button>
+                <label id="mylabel2">0</label>
+                <button id="Dislike">Dislike</button>
+            </div>
+            </h3>
+            <style>
+                   #mylabel1{
+                padding-bottom: 50%;
+                font-size: 90px;
+            }
+
+            #mylabel2{
+                font-size: 90px;
+                padding-left: 10%;
+            }
+            </style>
+            <script>
+        var count = 0;
+		var count1 = 0;
+        var two = document.getElementById("like").onclick = function(){
+            count+=1;
+            document.getElementById("mylabel1").innerHTML = count;
+            alert("please be faithful and vote one's")
+        }
+         
+        var one = document.getElementById("Dislike").onclick = function(){
+            count+=1;
+            document.getElementById("mylabel2").innerHTML = count;
+            alert("please be faithful and vote one's")
+        }
+
+            </script>
+
+    </body>
+</html>
